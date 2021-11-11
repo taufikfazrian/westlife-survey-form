@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Westlife Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Westlife Survey Form</h1>
+    <p id="description">For Westlife, the music will never stop as long as our fans are around inspiring us to keep on making beautiful music together.</p>
+
+    <form id="survey-form">
+        <label for="name" id="name-label">
+            Name
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </label>
+
+        <label for="email" id="email-label">
+            Email
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </label>
+
+        <label for="number" id="number-label">
+            Age
+            <input type="number" id="number" placeholder="How old are you?"
+            min="15" max="60">
+        </label>
+
+        <label for="dropdown" id="dropdown-label">
+            How do you now westlife?
+            <select id="dropdown">
+                <option>Tes 1</option>
+                <option>Tes 2</option>
+            </select>
+        </label>
+
+        <label for="member" id="member-label">
+            Who is your favorite?
+        </label>
+
+        <input type="radio" name="member" value="shane-filan" checked> Shane Filan <br>
+        <input type="radio" name="member" value="brian-mcFadden"> Brian McFadden <br>
+        <input type="radio" name="member" value="kian-egan"> Kian Egan <br>
+        <input type="radio" name="member" value="nicky-byrne "> Nicky Byrne <br>
+        <input type="radio" name="member" value="mark-feehily"> Mark Feehily <br>
+
+        <label for="albums" id="albums-label">
+            Choose your favorite album(s)?
+        </label>
+
+        <input type="checkbox" value="spectrum"> Spectrum <br>
+        <input type="checkbox" value="wild-dreams"> Wild Dreams <br>
+        <input type="checkbox" value="back-home"> Back Home <br>
+
+        <label for="comments" id="comments-label">
+            Any comments or suggestion
+            <textarea id="comments" cols="30" rows="10"></textarea>
+        </label>
+
+        <button type="submit" id="submit">Submit</button>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
